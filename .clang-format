@@ -1,0 +1,47 @@
+Language:        Cpp
+# 指定用于C++的基本格式规则
+BasedOnStyle:    LLVM
+# 指定特定的缩进规则
+IndentWidth:     4
+# 在多行连续声明时，确保每个声明都在新的一行
+AlignAfterOpenBracket: AlwaysBreak
+# 在函数参数列表中，确保每个参数都在新的一行
+AlignAfterOpenBracket: AlwaysBreak
+# 函数参数列表和调用时的对齐规则
+AlignConsecutiveDeclarations: false
+AlignConsecutiveAssignments: false
+# 对齐右括号
+AlignTrailingComments: true
+# 在二进制操作符之后换行
+BreakBeforeBinaryOperators: All
+# 大括号换行风格
+BreakBeforeBraces: Attach
+# 在连续的成员初始化列表中，确保每个成员都在新的一行
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+# 连续的赋值时，确保每个表达式都在新的一行
+ContinuationIndentWidth: 4
+# 在Lambda表达式的参数列表中换行
+# BreakBeforeLambdaBody: true
+# 括号内的换行风格
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+# 当行长度超过指定值时，进行换行
+ColumnLimit: 100
+# 空行相关设置
+EmptyLineBeforeAccessModifier: Never
+# EmptyLineBeforeBlockEnd: true
+# EmptyLineBeforeFunctionBody: Always
+# 运算符放置规则
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: Never
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInParentheses: false
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeSquareBrackets: false
+# 将注释放在独立的一行
+CommentPragmas: '^\\s*\\*\\s*\\<\\s*\\(endif\\|else\\|if\\|ifndef\\|ifdef\\|define\\|pragma\\)\\s+[^\\n]+\\s*\\>'
+...
